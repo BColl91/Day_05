@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener("DOMContentLoaded", () => {
     const words = ["javascript", "hangman", "programming", "code"];
     let chosenWord, wordDisplay, wrongGuesses, maxWrongGuesses;
@@ -49,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function updateHangmanImage() {
-        // Note the adjustment here to match the file naming convention
         hangmanImageElement.src = `./images/Hangman0${7 - maxWrongGuesses}.png`;
     }
 
